@@ -1,13 +1,251 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading{
+  text-align: center;
+  margin-top: 2.2rem;
+}
+
+.header {
+  color: aqua;
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+}
+
+.header-2 {
+  color: #1d3557;
+  margin-bottom: 1.6rem;
+}
+
+.header-text {
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 2.2rem;
+}
+
+.container {
+  padding: 0 4.2rem 1rem;
+
+}
+
+.grid {
+  display: grid;
+  column-gap: 1.4rem;
+  row-gap: 2rem;
+  margin-bottom: 9.6rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.peru {
+  border-radius: 3rem;
+  border: 1px solid rgba(128, 128, 128, 0.856);
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+  /*width: 300px;
+  border-width: 5rem solid aqua;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  */
+}
+
+.peru:hover {
+  border: 3px solid aqua;
+}
+
+.para {
+  border: 2px solid aqua;
+}
+
+.para:hover {
+  border: 1px solid rgba(128, 128, 128, 0.856);
+}
+
+.p-Img {
+  width: 6rem;
+  height: 6rem;
+  margin: 1.6rem;
+}
+
+.logo-name {
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.sectionTestimonials {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  align-items: center;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2.8rem;
+}
+
+.testimonialImg {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin-bottom: 1.6rem;
+  display: block;
+  align-items: left;
+  text-align: left;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.testimonialName {
+  display: block;
+  text-align: left;
+  align-items: left;
+  margin-bottom: 1.6rem;
+  color: #1d3557;
+}
+
+ .testimonialText {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+  align-items: left;
+  text-align: left;
+  color: #333;
+}
+
+.subHeading {
+  display: block;
+  text-align: left;
+  align-items: left;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  color: aqua;
+} 
+
+span {
+  margin-bottom: 1.6rem;
+  color: #1d3557;
+  border-bottom: 5px solid aqua;
+}
+
+.headingSecondary {
+  display: block;
+  text-align: left;
+  align-items: left;
+  margin-bottom: 1.6rem;
+  color: #1d3557;
+  font-size: 3.4rem;
+
+}
+
+.text {
+  display: block;
+  text-align: left;
+  align-items: left;
+  margin-bottom: 1.6rem;
+  line-height: 1.4rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 90vh;
+}
+
+/***********************
+FOOTER
+**********************/
+
+.footer {
+  padding: 8.8rem 0;
+  background-color: #1d3557;
+}
+
+.grid--footer {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footerLogo {
+  display: block;
+  margin-bottom: 2.2rem;
+  color: #fff;
+}
+
+.footerText {
+  margin: 2rem 0;
+  color: #fff;
+  line-height: 2rem;
+}
+
+ .socialLinks {
+  display: flex;
+  gap: 2.4rem;
+  color: #fff;
+  list-style: none;
+}
+
+.socialIcon {
+  height: 1.2rem;
+  width: 1.2rem;
+  background: rgb(10, 195, 195);
+  padding: 1.2rem;
+  color: #eee !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.footerLinks {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+  list-style: none;
+}
+
+.footerHeading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  color: #fff;
+
+}
+
+.footerLink:link, .footerLink:visited {
+  line-height: 2px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.footerLink:hover, .footerLink:active {
+  color: rgba(187, 180, 180, 0.823);
+} 
+
+.copyRight {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(238, 238, 238, 0.339);
+  width: 90%;
+  margin-left: 6rem;
+}
+
+.copytext, h3 {
+  color: #fff;
+  margin-top: 2.2rem;
 }
